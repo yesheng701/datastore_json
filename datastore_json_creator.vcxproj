@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{72F4544C-94AB-48DF-B626-DB01F0FFECCB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>zlibgen</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>dsadmin</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;../cpputil/include;../gtest/include;../base/include;../3rd-party/include;../util/include;../navicore-x64-std_debug/include;src</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../navicore-x64-std_debug/lib/Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cpputil\include\cpputil\arg_parser.h" />
+    <ClInclude Include="..\cpputil\include\cpputil\cli_command_center.h" />
+    <ClInclude Include="..\cpputil\include\cpputil\concurrent_task_runner.h" />
+    <ClInclude Include="..\cpputil\include\cpputil\console_util.h" />
+    <ClInclude Include="..\gtest\include\gtest\gtest.h" />
+    <ClInclude Include="src/stdafx.h" />
+<<<<<<< HEAD
+    <ClInclude Include="src\datastore_json.h" />
+    <ClInclude Include="src\diff_command.h" />
+    <ClInclude Include="src\diff_creator.h" />
+    <ClInclude Include="src\json_creator.h" />
+    <ClInclude Include="src\datastore_json_item.h" />
+    <ClInclude Include="src\datastore_json_writer.h" />
+    <ClInclude Include="src\datastore_util.h" />
+    <ClInclude Include="src\datastore_item_json_writer.h" />
+    <ClInclude Include="src\local_data.h" />
+    <ClInclude Include="src\datastore_patch.h" />
+    <ClInclude Include="src\datastore_item.h" />
+    <ClInclude Include="src\readme_txt.h" />
+    <ClInclude Include="src\source_file.h" />
+    <ClInclude Include="src\data_node.h" />
+    <ClInclude Include="src\data_tree_loader.h" />
+    <ClInclude Include="src\index_command.h" />
+    <ClInclude Include="src\navi_core_env.h" />
+    <ClInclude Include="src\store_hashmap.h" />
+=======
+    <ClInclude Include="src\json_creator_command.h" />
+    <ClInclude Include="src\navi_core_env.h" />
+>>>>>>> master
+    <ClInclude Include="src\test_command.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cpputil\src\arg_parser.cpp" />
+    <ClCompile Include="..\cpputil\src\cli_command_center.cpp" />
+    <ClCompile Include="..\cpputil\src\concurrent_task_runner.cpp" />
+    <ClCompile Include="..\cpputil\src\console_util.cpp" />
+    <ClCompile Include="..\gtest\src\gtest-all.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src/stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="src\datastore_json.cpp" />
+    <ClCompile Include="src\diff_command.cpp" />
+    <ClCompile Include="src\diff_creator.cpp" />
+    <ClCompile Include="src\json_creator.cpp" />
+    <ClCompile Include="src\datastore_json_item.cpp" />
+    <ClCompile Include="src\datastore_json_writer.cpp" />
+    <ClCompile Include="src\datastore_util.cpp" />
+    <ClCompile Include="src\datastore_item_json_writer.cpp" />
+    <ClCompile Include="src\local_data.cpp" />
+    <ClCompile Include="src\datastore_patch.cpp" />
+    <ClCompile Include="src\datastore_item.cpp" />
+    <ClCompile Include="src\readme_txt.cpp" />
+    <ClCompile Include="src\source_file.cpp" />
+    <ClCompile Include="src\data_node.cpp" />
+    <ClCompile Include="src\data_tree_loader.cpp" />
+    <ClCompile Include="src\index_command.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\navi_core_env.cpp" />
+    <ClCompile Include="src\store_hashmap.cpp" />
+    <ClCompile Include="src\test\datastore_json_writer_unittest.cpp" />
+    <ClCompile Include="src\test\datastore_util_unittest.cpp" />
+    <ClCompile Include="src\test\diff_creator_unittest.cpp" />
+    <ClCompile Include="src\test\local_data_manager_writer_unittest.cpp" />
+    <ClCompile Include="src\test\data_tree_loader_unittest.cpp" />
+    <ClCompile Include="src\test\readme_txt_unittest.cpp" />
+    <ClCompile Include="src\test\store_hashmap_unittest.cpp" />
+=======
+    <ClCompile Include="src\json_creator_command.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\navi_core_env.cpp" />
+>>>>>>> master
+    <ClCompile Include="src\test_command.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

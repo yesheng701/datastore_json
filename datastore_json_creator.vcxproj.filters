@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\cpputil\src\arg_parser.cpp">
+      <Filter>cpputil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpputil\src\console_util.cpp">
+      <Filter>cpputil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src/stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gtest\src\gtest-all.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpputil\src\cli_command_center.cpp">
+      <Filter>cpputil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\navi_core_env.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="src\data_node.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data_tree_loader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datastore_patch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\data_tree_loader_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datastore_json_writer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datastore_json.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datastore_json_item.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\local_data.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\json_creator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\datastore_json_writer_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source_file.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\local_data_manager_writer_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\diff_creator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\diff_creator_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpputil\src\concurrent_task_runner.cpp">
+      <Filter>cpputil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_command.cpp">
+      <Filter>command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\index_command.cpp">
+      <Filter>command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\diff_command.cpp">
+      <Filter>command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datastore_util.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\readme_txt.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\readme_txt_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\store_hashmap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\store_hashmap_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datastore_item.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datastore_item_json_writer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\datastore_util_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+=======
+    <ClCompile Include="src\test_command.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\json_creator_command.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+>>>>>>> master
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cpputil\include\cpputil\arg_parser.h">
+      <Filter>cpputil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpputil\include\cpputil\console_util.h">
+      <Filter>cpputil</Filter>
+    </ClInclude>
+    <ClInclude Include="src/stdafx.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gtest\include\gtest\gtest.h">
+      <Filter>gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpputil\include\cpputil\cli_command_center.h">
+      <Filter>cpputil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\navi_core_env.h">
+      <Filter>src</Filter>
+    </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="src\data_node.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data_tree_loader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datastore_patch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datastore_json_writer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datastore_json.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datastore_json_item.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\local_data.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\json_creator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source_file.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\diff_creator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpputil\include\cpputil\concurrent_task_runner.h">
+      <Filter>cpputil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_command.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\index_command.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\diff_command.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datastore_util.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\readme_txt.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\store_hashmap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datastore_item.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datastore_item_json_writer.h">
+=======
+    <ClInclude Include="src\test_command.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\json_creator_command.h">
+>>>>>>> master
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cpputil">
+      <UniqueIdentifier>{a6a4057a-dd37-4f0a-84a9-c78f54a09cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{72a52a99-be06-4236-9327-2b21920ce785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gtest">
+      <UniqueIdentifier>{a42c2cf0-7547-4998-b979-225b687042a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{0a7df870-a056-4838-8920-ffe63405f161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="command">
+      <UniqueIdentifier>{5f97e40d-5c79-4e51-acc3-54000bc16690}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
